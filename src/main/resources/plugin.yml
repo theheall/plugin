@@ -1,0 +1,78 @@
+name: TheHeall
+version: ${project.version}
+main: me.theheall.plugin.Plugin
+api-version: "1.13"
+authors: [Davivelex, KingALFONSE]
+commands:
+  anvil:
+    description: "Opens a remote anvil"
+    usage: "/anvil"
+
+  enderchest:
+    description: "Opens a player's enderchest"
+    aliases: ["echest"]
+    usage: "/enderchest [player:String]"
+
+  feed:
+    description: "Feeds the player"
+    usage: "/feed"
+
+  fly:
+    description: "Enables/Disables flying"
+    usage: "/fly"
+
+  gamemode:
+    description: "Allows the player to change his own gamemode"
+    usage: "/gamemode <number:Int>"
+    aliases: ["gm"]
+
+  heal:
+    description: "Heals the player"
+    usage: "/heal"
+
+  home:
+    description: "Create homes, where you can tp in"
+    usage: "/home [create|delete] <home:String> or <home:String>"
+
+  inventorysee:
+    description: "Opens the inventory of a selected player"
+    aliases: ["invsee", "inv"]
+    usage: "/invsee <player:String>"
+
+  message:
+    description: "Sends a chat message to all the online players"
+    aliases: ["msg"]
+    usage: "/msg <message:String>"
+
+  position:
+    description: "Sends a player's position"
+    aliases: ["pos"]
+    usage: "/position <player:String>"
+
+  repair:
+    description: "Repairs the item in your hand or all the items in your inventory"
+    aliases: ["fix"]
+    usage: "/repair <item|all>"
+
+  speed:
+    description: "Modifies the walking speed of the player"
+    usage: "/speed <velocity:Int>"
+
+  vanish:
+    description: "Vanishes you from other players"
+    usage: "/vanish"
+
+  vault:
+    description: "Secret chests only for you"
+    aliases: ["pv", "v"]
+    usage: "/vault <name:String>"
+
+  warp:
+    description: "Teleport to a waypoint"
+    usage: "/warp"
+
+  workbench:
+    description: "Opens a remote workbench"
+    aliases: ["wb"]
+    usage: "/workbench"
+
