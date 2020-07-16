@@ -7,6 +7,7 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class Config {
 
@@ -17,10 +18,10 @@ public class Config {
     protected YamlConfiguration config;
 
     public Config(String filename) {
-        path = Path.of(filename);
+        path = Paths.get(filename);
         try {
             if (!Files.exists(path.getParent())) Files.createDirectories(path.getParent());
-            if (!Files.exists(path)) Files.createFile(Path.of(filename));
+            if (!Files.exists(path)) Files.createFile(Paths.get(filename));
             file = new File(path.toUri());
             config = YamlConfiguration.loadConfiguration(file);
         } catch (IOException e) {

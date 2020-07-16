@@ -9,6 +9,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class Data {
     protected static Plugin plugin = Plugin.getPlugin(Plugin.class);
@@ -20,8 +21,8 @@ public class Data {
         file = new File(filename);
         try {
             if (!file.exists()) {
-                Files.createFile(Path.of(filename));
-                Files.write(Path.of(filename), "{}".getBytes());
+                Files.createFile(Paths.get(filename));
+                Files.write(Paths.get(filename), "{}".getBytes());
             }
             json = new JsonParser().parse(new FileReader(file)).getAsJsonObject();
         } catch (IOException e) {

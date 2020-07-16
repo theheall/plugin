@@ -1,6 +1,6 @@
 package me.theheall.plugin.commands;
 
-import me.theheall.chat.Chat;
+import me.theheall.plugin.chat.Chat;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
