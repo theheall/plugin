@@ -1,7 +1,7 @@
 package me.theheall.plugin.file;
 
-import me.theheall.plugin.Plugin;
 import org.bukkit.configuration.file.YamlConfiguration;
+import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
 import java.io.IOException;
@@ -11,7 +11,7 @@ import java.nio.file.Paths;
 
 public class Config {
 
-    protected static Plugin plugin = Plugin.getPlugin(Plugin.class);
+    public static JavaPlugin plugin;
 
     protected Path path;
     protected File file;
@@ -35,5 +35,9 @@ public class Config {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public static void setPlugin(JavaPlugin plugin) {
+        Config.plugin = plugin;
     }
 }

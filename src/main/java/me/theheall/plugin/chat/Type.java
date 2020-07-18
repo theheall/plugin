@@ -7,15 +7,24 @@ public enum Type {
     PERM(ChatColor.RED),
     WARN(ChatColor.GOLD),
     INFO(ChatColor.AQUA),
-    SUCCESS(ChatColor.GREEN);
+    SUCCESS(ChatColor.GREEN),
+    INFO_DATA(ChatColor.GREEN, ChatColor.YELLOW);
 
-    private final ChatColor color;
+    private final ChatColor[] colors;
 
-    Type(ChatColor color) {
-        this.color = color;
+    Type(ChatColor... colors) {
+        this.colors = colors;
     }
 
     public String getPrefix() {
-        return color + "# " + ChatColor.GRAY;
+        return colors[0] + "# " + ChatColor.GRAY;
+    }
+
+    public ChatColor getColor(int index) {
+        return colors[index];
+    }
+
+    public boolean multicolor() {
+        return colors.length > 1;
     }
 }

@@ -4,15 +4,17 @@ import me.theheall.plugin.commands.*;
 import me.theheall.plugin.events.InventoryEvent;
 import me.theheall.plugin.events.JoinEvent;
 import me.theheall.plugin.events.QuitEvent;
+import me.theheall.plugin.file.Config;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.Objects;
 
-public final class Plugin extends JavaPlugin implements Listener {
+public final class VanillaPlugin extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        Config.setPlugin(VanillaPlugin.getPlugin(VanillaPlugin.class));
 
         //Plugin Commands
         Objects.requireNonNull(getServer().getPluginCommand("anvil")).setExecutor(new AnvilCmd());

@@ -2,17 +2,15 @@ package me.theheall.plugin.file;
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import me.theheall.plugin.Plugin;
+import me.theheall.plugin.VanillaPlugin;
 
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class Data {
-    protected static Plugin plugin = Plugin.getPlugin(Plugin.class);
 
     protected File file;
     protected JsonObject json = new JsonObject();

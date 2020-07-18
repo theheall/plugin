@@ -1,4 +1,6 @@
-name: TheHeall
+# Vanilla plugin
+
+name: TheHeall-Vanilla
 version: ${project.version}
 main: me.theheall.plugin.Plugin
 api-version: "1.13"

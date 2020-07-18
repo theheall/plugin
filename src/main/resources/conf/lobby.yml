@@ -1,0 +1,12 @@
+# Lobby Plugin
+
+name: TheHeall
+version: 1.0.0
+main: me.theheall.plugin.LobbyPlugin
+api-version: "1.16"
+authors: [Davivelex, KingALFONSE]
+commands:
+  parkour:
+    description: ""
+    usage: "/parkour set <CheckPointType> | checkpoint | start | end"
+  serialize:
