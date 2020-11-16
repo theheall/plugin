@@ -6,7 +6,7 @@
 
     <groupId>tk.theheall</groupId>
     <artifactId>plugin</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packaging>jar</packaging>
 
     <name>Plugin</name>

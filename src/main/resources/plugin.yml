@@ -1,8 +1,15 @@
-name: Plugin
+name: TheHeall
 version: ${project.version}
 main: tk.theheall.plugin.Plugin
 api-version: 1.16
 authors: [ Davivelex ]
 commands:
   tpa:
-    usage: "/tpa send/accept/deny <Player>"
+    description: "Send a tp request to a player"
+    usage: "/tpa [send|accept|deny] <Player>"
+  warps:
+    description: "Open a menu with all the warp"
+    usage: "/warps [add] [code] [slot] [item{nbt}]"
+  home:
+    description: "Teleport player to the home warp"
+    user: "/home"

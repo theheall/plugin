@@ -5,7 +5,7 @@ import org.bukkit.entity.Player;
 
 public class Chat {
 
-    private Player player;
+    private final Player player;
 
     public Chat(Player player) {
         this.player = player;
